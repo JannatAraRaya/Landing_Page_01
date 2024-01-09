@@ -1,0 +1,57 @@
+// styles/Navbar.scss
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    &__logo {
+      font-size: 20px;
+      color: #000;
+    }
+  
+    &__nav-item {
+      cursor: pointer;
+      margin-right: 10px;
+  
+      &.navbar__dropdown {
+        position: relative;
+  
+        &-icon {
+          width: 20px;
+          height: 20px;
+          margin-left: 5px;
+          transition: transform 0.3s ease-in-out;
+        }
+  
+        &-icon.open {
+          transform: rotate(180deg);
+        }
+  
+        &-content {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 1;
+          display: none;
+          flex-direction: column;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+  
+        &:hover .navbar__dropdown-content {
+          display: flex;
+        }
+  
+        &-option {
+          padding: 10px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+  }
+  
