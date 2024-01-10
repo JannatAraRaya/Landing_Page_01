@@ -1,35 +1,29 @@
-'use client'
-import React, { useState } from 'react';
+import {Manrope } from 'next/font/google'
+import Link from "next/link";
 import './index.scss'; 
+import Button from '../Button';
 
-const Navbar: React.FC = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+const manrope =Manrope ({  
+  weight: ['400', '600','700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',})
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
+const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__logo">AR SHAKIR</div>
-      <div className={`navbar__nav-item navbar__dropdown ${isDropdownOpen ? 'open' : ''}`} onClick={toggleDropdown}>
-        Products
-        <div
-          dangerouslySetInnerHTML={{ __html: '' }}
-          className="navbar__dropdown-icon"
-        ></div>
-        {isDropdownOpen && (
-          <div className="navbar__dropdown-content">
-            <div className="navbar__dropdown-option">Option 1</div>
-            <div className="navbar__dropdown-option">Option 2</div>
-            <div className="navbar__dropdown-option">Option 3</div>
-          </div>
-        )}
+      <div className="navbar__item">
+        <Link href="/" className={`navbar__link ${manrope.className}`}>Products</Link>
+        <Link href="/" className={`navbar__link ${manrope.className}`}>Template</Link>     
+        <Link href="/" className={`navbar__link ${manrope.className}`}>Blog</Link>     
+        <Link href="/" className={`navbar__link ${manrope.className}`}>Pricing</Link>     
       </div>
-
-      <div className="navbar__nav-item">Template</div>
-      <div className="navbar__nav-item">Blog</div>
-      <div className="navbar__nav-item">Pricing</div>
+      <div className ="navbar__button">
+        <Link href="/" className={`navbar__button navbar__button--signIn ${manrope.className}`}>Sign in</Link>
+        {/* <button className="navbar__button--StartFree">Start Free</button> */}
+        <Button className={`navbar__button navbar__button--startFree ${manrope.className}`} text="Start Free" />
+      </div>
     </div>
   );
 };

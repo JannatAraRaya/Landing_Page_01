@@ -1,9 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter,Manrope } from 'next/font/google'
+// import './globals.css'
 
 
 const inter = Inter({ subsets: ['latin'] })
+const manrope =Manrope ({  
+  weight: ['400', '600','700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',})
 
 export const metadata: Metadata = {
   title: 'AR SHAKIR',

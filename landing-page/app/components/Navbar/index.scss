@@ -1,56 +1,73 @@
-
+@use "../../styles/color" as *;
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:1200px;
+    height:52px;
+    margin:0px 117px 0px 120px;
+    padding-top:23px;
+    padding-left: 0px;
+    // margin: auto;
   
     &__logo {
+      color: $TextColor;
+      font-family: Gilroy;
       font-size: 20px;
-      color: #000;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }  
+    &__link {
+      margin:auto;
+      color: $TextColor;
+      text-align: center;
+      font-family: Manrope;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-left: 20px; 
+      text-decoration: none; 
     }
-  
-    &__nav-item {
-      cursor: pointer;
-      margin-right: 10px;
-  
-      &.navbar__dropdown {
-        position: relative;
-  
-        &-icon {
-          width: 20px;
-          height: 20px;
-          margin-left: 5px;
-          transition: transform 0.3s ease-in-out;
-        }
-  
-        &-icon.open {
-          transform: rotate(180deg);
-        }
-  
-        &-content {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          z-index: 1;
-          display: none;
-          flex-direction: column;
-          background-color: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-  
-        &:hover .navbar__dropdown-content {
-          display: flex;
-        }
-  
-        &-option {
-          padding: 10px;
-          cursor: pointer;
-  
-          &:hover {
-            background-color: #f0f0f0;
-          }
+    .navbar__button{      
+      color: $TextColor;
+      text-decoration: none; 
+      .navbar__button--signIn{
+        margin-right: 49px;
+        color: $TextColor;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border:none;
+      }
+      .navbar__button--startFree{
+        width: 137px;
+        height: 52px;
+        color: #FFF;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        flex-shrink: 0;
+        background-color: $buttonColor1;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+
+        &:hover {
+          background-color: darken($buttonColor1, 10%);
         }
       }
+
     }
+
   }
   

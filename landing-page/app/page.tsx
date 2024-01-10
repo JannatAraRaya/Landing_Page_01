@@ -1,13 +1,14 @@
 import Image from 'next/image'
-import styles from './page.module.css'
-import About from './pages/About'
+// import styles from './page.module.css'
+import './styles/_common.scss'
 import Hero from './pages/Hero'
+import Companies from './pages/Companies'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main >
       <Hero/>
-   <About/>
+      <Companies/>
     </main>
   )
 }
