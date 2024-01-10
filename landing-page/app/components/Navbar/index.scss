@@ -11,7 +11,7 @@
     // margin: auto;
   
     &__logo {
-      color: $TextColor;
+      color:$text-light;
       font-family: Gilroy;
       font-size: 20px;
       font-style: normal;
@@ -21,7 +21,7 @@
     }  
     &__link {
       margin:auto;
-      color: $TextColor;
+      color: $text-light-blue;
       text-align: center;
       font-family: Manrope;
       font-size: 14px;
@@ -32,11 +32,11 @@
       text-decoration: none; 
     }
     .navbar__button{      
-      color: $TextColor;
+      color: $text-light;
       text-decoration: none; 
       .navbar__button--signIn{
         margin-right: 49px;
-        color: $TextColor;
+        color: $text-light;
         text-align: center;
         font-family: Manrope;
         font-size: 14px;

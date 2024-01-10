@@ -1,6 +1,6 @@
-import ComapanyText from '@/app/components/CompanyText'
+import ComapanyText from '@/app/components/Company-Section-Text'
 import './index.scss'
-import CompanyLogo from '@/app/components/CompanyLogo'
+import CompanyLogo from '@/app/components/Company-Logo'
 
 export default function Companies() {
     return (

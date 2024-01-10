@@ -1,0 +1,59 @@
+@use "../../styles/color" as *;
+
+.hero-section-wrapper {
+    display: flex;
+    height: 755px;
+    width: 100%;
+  }
+  
+  .hero-section-wrapper__text {
+    flex: 1; 
+    margin-top:122px;
+    margin-left:125px;
+  }
+
+  .hero-section-wrapper__text--first-para{
+    width:437px;
+    height:37px;
+    color: #000;
+    font-family: Gilroy-SemiBold;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .hero-section-wrapper__text--middle{
+    width:646px;
+    height: 240px;
+    color: $text-light;
+    font-family: Manrope;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px; 
+    letter-spacing: -1.8px;
+  }
+  .hero-section-wrapper__text--last-para{
+    width:569px;
+    height:109px;
+    color: $color-Deluge;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 175% */
+    letter-spacing: -0.4px;
+    
+  }
+  
+  .hero-section-wrapper__image {
+    width: 638px; 
+    background: url('/images/hero-img.png') center/cover; 
+  }
+  
+
+  .hero-section-wrapper_email-sender{
+    width:622px;
+    height:100px;
+  }

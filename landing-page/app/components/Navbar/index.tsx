@@ -21,8 +21,7 @@ const Navbar = () => {
       </div>
       <div className ="navbar__button">
         <Link href="/" className={`navbar__button navbar__button--signIn ${manrope.className}`}>Sign in</Link>
-        {/* <button className="navbar__button--StartFree">Start Free</button> */}
-        <Button className={`navbar__button navbar__button--startFree ${manrope.className}`} text="Start Free" />
+       <Button className={`navbar__button navbar__button--startFree ${manrope.className}`} text="Start Free" />
       </div>
     </div>
   );

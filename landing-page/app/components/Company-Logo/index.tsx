@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './logoProps';
 import './index.scss'
 
 const logos = [
@@ -11,7 +10,15 @@ const logos = [
   { src: '/images/companyLogo/Segment.svg', alt: '6' },
   { src: '/images/companyLogo/Protonet.svg', alt: '7' },
 ];
+interface LogoProps {
+  className?:string;
+  src: string;
+  alt: string;
+}
 
+const Logo: React.FC<LogoProps> = ({ src, alt, className }) => {
+  return <img src={src} alt={alt} className={className}/>;
+};
 const CompanyLogo: React.FC = () => {
   return (
       <div className="logos">

@@ -1,4 +1,4 @@
-import LawFirstPortion from "@/app/components/Law_Section/First";
+import LawFirstPortion from "@/app/components/Law-Section";
 
 export default function LawSection() {
     return (
