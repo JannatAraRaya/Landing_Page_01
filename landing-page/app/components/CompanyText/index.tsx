@@ -2,7 +2,7 @@ import './index.scss';
 
 const ComapanyText = () => {
     return (
-        <div className="main-div__centeredText">
+        <div className="centered-Text">
             Over 32k+ software businesses growing with AR Shakir
         </div>
 

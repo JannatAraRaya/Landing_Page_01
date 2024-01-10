@@ -14,9 +14,9 @@ const logos = [
 
 const CompanyLogo: React.FC = () => {
   return (
-      <div className="main-div__logos">
+      <div className="logos">
         {logos.map((logo, index) => (
-            <Logo key={index} src={logo.src}  alt={logo.alt} className='main-div__logos--logoItem'/>
+            <Logo key={index} src={logo.src}  alt={logo.alt} className='logos--logoItem'/>
         ))}
       </div>
   );
