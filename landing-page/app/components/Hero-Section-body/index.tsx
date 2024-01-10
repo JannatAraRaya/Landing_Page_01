@@ -10,10 +10,18 @@ const HeroSectionBody= () => {
                 <p className='hero-section-wrapper__text--last-para'>Never at water me might. On formed merits hunted <br /> unable merely 
                 by mr whence or. Possession the unpleasing simplicity <br /> her uncommonly.</p>
             <div className='hero-section-wrapper_email-sender'>
-            
+                <div>
+                    <p>Register using email address</p>
+                    <p>shakir260@gmail.com</p>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
             </div>
             </div>
             <div className="hero-section-wrapper__image">
+    
+
             </div>
         </div>
 
