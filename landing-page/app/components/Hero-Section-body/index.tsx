@@ -11,18 +11,15 @@ const HeroSectionBody= () => {
                 by mr whence or. Possession the unpleasing simplicity <br /> her uncommonly.</p>
             <div className='hero-section-wrapper_email-sender'>
                 <div>
-                    <p>Register using email address</p>
-                    <p>shakir260@gmail.com</p>
+                    <p  className='hero-section-wrapper_email-sender--normal-text'>Register using email address</p>
+                    <p className='hero-section-wrapper_email-sender--bold-text'>shakir260@gmail.com</p>
                 </div>
-                <div>
-                    <button>Submit</button>
+                <div >
+                    <button className='hero-section-wrapper_email-sender--button'>Submit</button>
                 </div>
             </div>
             </div>
-            <div className="hero-section-wrapper__image">
-    
-
-            </div>
+            <div className="hero-section-wrapper__image"></div>
         </div>
 
     );

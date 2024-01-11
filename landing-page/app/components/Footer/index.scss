@@ -6,8 +6,7 @@
 }
 
 .footer__sub-section{
-    background-color: aqua;
-    margin:0 auto;
+    margin:0px 128px 0px 172px;
     display:flex;
     flex-direction: column;
 }
@@ -38,4 +37,19 @@ a{
 }
 .footer_sub-section__links__div__socialmedia p{
     width:80%;
+}
+hr{
+    height: 2px;
+    flex-shrink: 0;
+    background:$color-border-lightest-blue;
+}
+.footer__sub-section__below__copyright p{
+    color: $text-color-darkest-blue;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    letter-spacing: -0.32px;
 }
