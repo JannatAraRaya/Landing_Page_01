@@ -4,3 +4,14 @@
         align-items: center; 
         margin-left:49.55px;
     }
+
+    @media only screen and (max-width: 1024px) {
+        .logos--logoItem{   
+            margin-left:39.55px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .logos--logoItem{   
+            margin-left:29.55px;
+        }
+      }
