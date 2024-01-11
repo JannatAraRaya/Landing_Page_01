@@ -1,0 +1,41 @@
+@use "../../styles/color" as *;
+@use "../../styles/fonts" as *;
+
+.footer{
+    background-color: $color-white;   
+}
+
+.footer__sub-section{
+    background-color: aqua;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+}
+.footer_sub-section__links{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.footer_sub-section__links__div{
+    width:150px;
+    margin:16px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.footer_sub-section__links__div__socialmedia{
+    display:flex;  
+    flex-direction: row;  
+}
+.footer_sub-section__links__div__socialmedia p{
+    width:80%;
+}

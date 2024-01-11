@@ -4,6 +4,7 @@ import './styles/_common.scss'
 import Hero from './pages/HeroSection'
 import Companies from './pages/CompanySection'
 import LawSection from './pages/LawSection'
+import Footer from './pages/FooterSection'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <Companies/>
       <LawSection/>
+      <Footer/>
     </main>
   )
 }

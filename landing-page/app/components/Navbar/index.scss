@@ -56,14 +56,14 @@
         font-weight: 600;
         line-height: normal;
         flex-shrink: 0;
-        background-color: $buttonColor1;
+        background-color: $color-basic-blue;
         border-radius: 10px;
         text-decoration: none;
         display: inline-block;
         border: none;
 
         &:hover {
-          background-color: darken($buttonColor1, 10%);
+          background-color: darken($color-basic-blue, 10%);
         }
       }
 
