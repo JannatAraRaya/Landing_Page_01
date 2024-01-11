@@ -1,6 +1,6 @@
 import Navbar from "@/app/components/Navbar";
 import './index.scss'
-import HeroSectionBody from "@/app/components/Hero-Section-body";
+import HeroSectionBody from "@/app/components/HeroSectionbody";
 
 export default function Hero() {
     return (

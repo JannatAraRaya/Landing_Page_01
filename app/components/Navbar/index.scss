@@ -1,72 +1,116 @@
 @use "../../styles/color" as *;
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height:52px;
-    // margin: 0 auto;
-    margin:0px 117px 0px 120px;
-    padding-top:23px;
-    padding-left: 0px;
-  
-    &__logo {
-      color:$text-light;
-      font-family: Gilroy;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      text-transform: uppercase;
-    }  
-    &__link {
-      margin:auto;
-      color: $text-light-blue;
-      text-align: center;
-      font-family: Manrope;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      margin-left: 20px; 
-      text-decoration: none; 
-    }
-    .navbar__button{      
-      color: $text-light;
-      text-decoration: none; 
-      .navbar__button--signIn{
-        margin-right: 49px;
-        color: $text-light;
-        text-align: center;
-        font-family: Manrope;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        border:none;
-      }
-      .navbar__button--startFree{
-        width: 137px;
-        height: 52px;
-        color: #FFF;
-        text-align: center;
-        font-family: Manrope;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        flex-shrink: 0;
-        background-color: $color-basic-blue;
-        border-radius: 10px;
-        text-decoration: none;
-        display: inline-block;
-        border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  margin: 0px 117px 0px 120px;
+  padding-top: 23px;
+  padding-left: 0px;
+}
+.navbar__logo {
+  color: $text-light;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.navbar__link {
+  margin: auto;
+  color: $text-light-blue;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.navbar__button {
+  color: $text-light;
+  text-decoration: none;
+}
+.navbar__button--signIn {
+  margin-right: 49px;
+  color: $text-light;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
+.navbar__button--startFree {
+  width: 137px;
+  height: 52px;
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex-shrink: 0;
+  background-color: $color-basic-blue;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
 
-        &:hover {
-          background-color: darken($color-basic-blue, 10%);
-        }
-      }
-
-    }
-
+  &:hover {
+    background-color: darken($color-basic-blue, 10%);
   }
-  
+}
+@media only screen and (max-width: 1024px){
+  .navbar__logo {
+    font-size: 20px;
+  }
+  .navbar__link {
+    font-size: 14px;
+    margin-left: 14px;
+  }
+  .navbar__button{
+    display: flex;
+  }
+  .navbar__button--signIn {
+    margin-left: 22px;
+    font-size: 14px;
+  }
+  .navbar__button--startFree {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .navbar__logo {
+    font-size: 18px;
+  }
+  .navbar__link {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  .navbar__button{
+    display: flex;
+  }
+  .navbar__button--signIn {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .navbar__button--startFree {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 8px;
+  }
+}
