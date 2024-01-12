@@ -5,12 +5,14 @@ import Hero from './pages/HeroSection'
 import Companies from './pages/CompanySection'
 import LawSection from './pages/LawSection'
 import Footer from './pages/FooterSection'
+import NumberSection from './pages/NumberSection'
 
 export default function Home() {
   return (
     <main >
-      <Hero/>
+      <Hero/>      
       <Companies/>
+      <NumberSection/>
       <LawSection/>
       <Footer/>
     </main>

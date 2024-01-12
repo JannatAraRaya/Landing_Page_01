@@ -38,6 +38,7 @@ a {
    margin-right: 16px;
 }
 hr {
+    margin-top: -10px;
     height: 2px;
     flex-shrink: 0;
     background: $color-border-lightest-blue;
@@ -48,7 +49,6 @@ hr {
 .footer__sub-section__below__copyright p {
     color: $text-color-darkest-blue;
     text-align: center;
-    font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -58,7 +58,6 @@ hr {
 // h4 tags
 .footer__sub-section__links__div h4 {
     color: $text-color-darkest-blue;
-    font-family: Manrope;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
@@ -66,7 +65,6 @@ hr {
 }
 .footer__sub-section__links__div--logo {
     color: var(--Pallet-1-Dark, $color-dark-ocean-blue);
-    font-family: Gilroy;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
@@ -77,7 +75,6 @@ hr {
 // all p tags
 .footer__sub-section__links__div--simple-text {
     color: $color-Deluge;
-    font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -94,7 +91,7 @@ hr {
     flex-direction: column;
 }
 .footer__sub-section__links__div__p p {
-    font-family: Manrope;
+   
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -115,7 +112,6 @@ hr {
 }
 ::placeholder {
     color: #181433;
-    font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

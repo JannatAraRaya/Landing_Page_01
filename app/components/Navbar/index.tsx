@@ -14,13 +14,13 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__logo">AR SHAKIR</div>
       <div className="navbar__item">
-        <Link href="/" className={`navbar__link ${manrope.className}`}>Products</Link>
+        <Link href="/" className={`navbar__link ${manrope.className}`}>Product</Link>
         <Link href="/" className={`navbar__link ${manrope.className}`}>Template</Link>     
         <Link href="/" className={`navbar__link ${manrope.className}`}>Blog</Link>     
         <Link href="/" className={`navbar__link ${manrope.className}`}>Pricing</Link>     
       </div>
       <div className ="navbar__button">
-        <Link href="/" className={`navbar__button navbar__button--signIn ${manrope.className}`}>Sign in</Link>
+        <Link href="/" className={`navbar__button navbar__button--signIn ${manrope.className}`}>Sign In</Link>
         <Button className={`navbar__button navbar__button--startFree ${manrope.className}`} text="Start Free" />
       </div>
     </div>

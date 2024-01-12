@@ -4,30 +4,34 @@
   justify-content: space-between;
   align-items: center;
   height: 52px;
-  margin: 0px 117px 0px 120px;
+  margin: 0 auto;
   padding-top: 23px;
   padding-left: 0px;
+  overflow: hidden;
 }
 .navbar__logo {
   color: $text-light;
-  font-family: Gilroy;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
+  margin-left: 120px;
+  letter-spacing: -1px;
 }
+// .navbar__item{
+//   // margin-left: 120px;
+// }
 .navbar__link {
   margin: auto;
   color: $text-light-blue;
   text-align: center;
-  font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-left: 20px;
   text-decoration: none;
+  margin-left: 40px;
 }
 .navbar__button {
   color: $text-light;
