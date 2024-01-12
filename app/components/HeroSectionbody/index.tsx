@@ -1,11 +1,17 @@
+import {Manrope } from 'next/font/google'
 import './index.scss';
+const manrope =Manrope ({  
+    weight: ['400', '600','700'],
+    style: ['normal'],
+    subsets: ['latin'],
+    display: 'swap',})
 
 const HeroSectionBody= () => {
     return (
         <div className="hero-section-wrapper">
             <div className='hero-section-wrapper__text'>
                 <p className='hero-section-wrapper__text--first-para'>Product Growth Solution in Single Platform.</p>
-                <p className='hero-section-wrapper__text--middle'> Managing business payments has never 
+                <p className={`hero-section-wrapper__text--middle ${manrope.className}`}> Managing business payments has never 
                                                                     <br /> been easier</p>
                 <p className='hero-section-wrapper__text--last-para'>Never at water me might. On formed merits hunted  unable <br /> merely 
                 by mr whence or. Possession the unpleasing simplicity <br /> her uncommonly.</p>

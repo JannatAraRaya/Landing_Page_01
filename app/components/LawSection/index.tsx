@@ -23,7 +23,7 @@ const IconText: React.FC<IconTextProps> = ({ iconSrc, text}) => (
 const LawFirstPortion = () => {
     return (
         <div className="outer-div">
-            <div className="outer-div__text">
+            <div className={`outer-div__text ${manrope.className}`} >
                 <p>Among leave law built now.</p>
             </div>
             <div className="outer-div__icon-and-Text">

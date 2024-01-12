@@ -6,6 +6,7 @@ import Companies from './pages/CompanySection'
 import LawSection from './pages/LawSection'
 import Footer from './pages/FooterSection'
 import NumberSection from './pages/NumberSection'
+import Help from './components/HelpSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero/>      
       <Companies/>
       <NumberSection/>
+      <Help/>
       <LawSection/>
       <Footer/>
     </main>

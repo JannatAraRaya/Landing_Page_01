@@ -6,7 +6,8 @@
 }
 
 .footer__sub-section {
-    margin: 123px 128px 0px 172px;
+    margin: 123px 128px 0px 128px;
+    // margin:0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +39,6 @@ a {
    margin-right: 16px;
 }
 hr {
-    margin-top: -10px;
     height: 2px;
     flex-shrink: 0;
     background: $color-border-lightest-blue;
