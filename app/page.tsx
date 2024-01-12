@@ -7,6 +7,7 @@ import LawSection from './pages/LawSection'
 import Footer from './pages/FooterSection'
 import NumberSection from './pages/NumberSection'
 import Help from './components/HelpSection'
+import Offened from './components/OffendSection'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <NumberSection/>
       <Help/>
       <LawSection/>
+      <Offened/>
       <Footer/>
     </main>
   )
