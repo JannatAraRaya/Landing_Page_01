@@ -42,7 +42,7 @@ const Help = () => {
                         <Card
                             icon="/images/helpSection/prize.svg"
                             title="Offending belonging"
-                            text="Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as."
+                            text="Letter of on become he tended active  enable to. Vicinity relation sensible sociable sur prise screened no up as."
                             readMoreText="Read More"
                         />
 

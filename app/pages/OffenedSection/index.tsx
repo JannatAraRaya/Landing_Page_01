@@ -1,3 +1,5 @@
+"use client"
+import React, { useState, useEffect } from "react";
 import OffenedCard from '@/app/components/OffendCard'
 import { Manrope } from "next/font/google";
 import './index.scss'
@@ -8,20 +10,20 @@ const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
 });
-
+interface OffenedCardData {
+  title: string;
+  paragraph: string;
+  buttonText: string;
+}
 export default function OffenedSection() {
-  const cardsData = [
-    {
-      title: 'Offend belong <br/> promote provision',
-      paragraph: 'Wise busy past both park when an ye no. Nay likely her length sooner <br/> thrown sex lively income. ',
-       buttonText: 'Read More',
-    },
-    {
-      title: 'Consulted ourselves it <br/> blessing welcom',
-      paragraph: 'The expense windows adapted sir. Wrong widen drawn ample eat <br/> off doors money.',
-      buttonText: 'Read More',
-    },
-  ];
+  const [cardsData, setCardsData] = useState<OffenedCardData[]>([]);
+
+  useEffect(() => {
+    fetch('./data/offenedData.json')
+      .then(response => response.json())
+      .then((data: OffenedCardData[]) => setCardsData(data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
 
     return (

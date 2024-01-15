@@ -21,7 +21,7 @@
     color: #000;
     font-size: 40px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 48px;
     letter-spacing: -1.2px;
     top: 220px;
@@ -38,4 +38,58 @@
     font-weight: 500;
     line-height: 30px;
     letter-spacing: -0.4px;
+}
+.download-block__button{
+    position:absolute;
+    top:405px;
+    left:470px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: -0.32px;
+    width: 178px;
+    height: 55px;
+    border-radius: 47px;
+    background: #5D5FEF;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border:none;
+
+
+}
+.download-block__button:hover {
+    background: #3638b8;
+}
+.download-block__button--dark{
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    top:405px;
+    left:660px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    letter-spacing: -0.32px;
+    width: 178px;
+    height: 55px;
+    border-radius: 47px;
+    background: #0F0E2C;
+    transition: background 0.3s ease;
+    border:none;
+    cursor:pointer;
+    padding-right: 25px;
+    padding-left: 20px;
+}
+.download-block__button--dark:hover {
+    background: #302d64;
+}
+
+.download-block__button-logo {
+    padding-right: 5px;
+    padding-top: 10px;
 }

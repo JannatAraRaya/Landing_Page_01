@@ -32,11 +32,11 @@ const DownloadBlock: React.FC<ContentBlockProps> = ({
             <h1 className={`download-block__h1 ${manrope.className}`}>{h1Text}</h1>
             <p className={`download-block__two-line-paragraph ${manrope.className}`}>{twoLineParagraph}</p>
             <div className="download-block__buttons">
-                <button className="download-block__button">
+                <button className={`download-block__button ${manrope.className}`}>
                     {button1LogoPath && <img src={button1LogoPath} alt="Button 1 Logo" className="download-block__button-logo" />}
                     {button1Text}
                 </button>
-                <button className="download-block__button">
+                <button className={`download-block__button--dark ${manrope.className}`}>
                     {button2LogoPath && <img src={button2LogoPath} alt="Button 2 Logo" className="download-block__button-logo" />}
                     {button2Text}
                 </button>

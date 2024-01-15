@@ -1,11 +1,30 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.scss";
 import { Manrope } from "next/font/google";
 import Image from 'next/image';
 import Navbar from "@/app/components/Navbar";
-import HeroSectionBg from '../../../public/images/hero-img.png';
 import HeroSection from "@/app/components/HeroSection";
+
+interface Link {
+  href: string;
+  label: string;
+}
+
+interface HeroSectionData {
+  title: string;
+  subtitle: string;
+  description: string;
+  email: string;
+  buttonText: string;
+}
+
+interface HeaderData {
+  links: Link[];
+  signInLink: string;
+  heroSection: HeroSectionData;
+}
+
 const manrope = Manrope({
   weight: ["400", "600", "700"],
   style: ["normal"],
@@ -16,38 +35,35 @@ const manrope = Manrope({
 export default function HeaderSection() {
   const [buttonEffect, setButtonEffect] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [data, setData] = useState<HeaderData | null>(null);
 
-  const handleButtonClick = () => {
-    setButtonEffect(true);
-  };
+  useEffect(() => {
+    fetch('./data/data.json')
+      .then(response => response.json())
+      .then((jsonData: HeaderData) => {
+        console.log('Data received:', jsonData);
+        setData(jsonData);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);  
 
-  const handleToggleClick = () => {
-    setDropdownVisible(!dropdownVisible);
-  };
 
-  const links = [
-    { href: '/', label: 'Product' },
-    { href: '/', label: 'Template' },
-    { href: '/', label: 'Blog' },
-    { href: '/', label: 'Pricing' },
-  ];
-  const signInLink = '/';
-
+  const links = data ? data.links : [];
+  const signInLink = data ? data.signInLink : '/';
 
   return (
     <>
       <div className="header">        
         <Navbar manrope={manrope} links={links} signInLink={signInLink} />
-         <HeroSection
-      title="Product Growth Solution in Single Platform."
-      subtitle="Managing business payments has never been easier"
-      description="Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly."
-      email="shakir260@gmail.com"
-      buttonText="Submit"
-      fontClass={manrope.className}
-    />
+        <HeroSection
+          title={data ? data.heroSection.title : ""}
+          subtitle={data ? data.heroSection.subtitle : ""}
+          description={data ? data.heroSection.description : ""}
+          email={data ? data.heroSection.email : ""}
+          buttonText={data ? data.heroSection.buttonText : ""}
+          fontClass={manrope.className}
+        />
       </div>
-
     </>
   );
 }
