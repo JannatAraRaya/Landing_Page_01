@@ -1,6 +1,11 @@
 import React from 'react';
+import "./index.scss";
+
+
+
 
 interface ContentBlockProps {
+    manrope: any;
     smallParagraph: string;
     h1Text: string;
     twoLineParagraph: string;
@@ -11,6 +16,7 @@ interface ContentBlockProps {
 }
 
 const DownloadBlock: React.FC<ContentBlockProps> = ({
+    manrope,
     smallParagraph,
     h1Text,
     twoLineParagraph,
@@ -23,15 +29,15 @@ const DownloadBlock: React.FC<ContentBlockProps> = ({
     return (
         <div className="download-block">
             <p className="download-block__small-paragraph">{smallParagraph}</p>
-            <h1 className="download-block__h1">{h1Text}</h1>
-            <p className="download-block__two-line-paragraph">{twoLineParagraph}</p>
+            <h1 className={`download-block__h1 ${manrope.className}`}>{h1Text}</h1>
+            <p className={`download-block__two-line-paragraph ${manrope.className}`}>{twoLineParagraph}</p>
             <div className="download-block__buttons">
-                <button className="custom-content-block__button">
-                    {button1LogoPath && <img src={button1LogoPath} alt="Button 1 Logo" className="custom-content-block__button-logo" />}
+                <button className="download-block__button">
+                    {button1LogoPath && <img src={button1LogoPath} alt="Button 1 Logo" className="download-block__button-logo" />}
                     {button1Text}
                 </button>
-                <button className="custom-content-block__button">
-                    {button2LogoPath && <img src={button2LogoPath} alt="Button 2 Logo" className="custom-content-block__button-logo" />}
+                <button className="download-block__button">
+                    {button2LogoPath && <img src={button2LogoPath} alt="Button 2 Logo" className="download-block__button-logo" />}
                     {button2Text}
                 </button>
             </div>

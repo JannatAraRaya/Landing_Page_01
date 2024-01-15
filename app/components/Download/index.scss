@@ -1,0 +1,41 @@
+@use "../../styles/color" as *;
+
+.download-block__small-paragraph {
+    position: absolute;
+    top: 182px;
+    left: 550px;
+    text-align: center;
+    color: #5d5fef;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.download-block__h1 {
+    position: absolute;
+    width: 700px;
+    height: 95px;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    top: 220px;
+    left: 290px;
+}
+.download-block__two-line-paragraph {
+    position:absolute;
+    top:345px;
+    left:335px;
+    color: #64607d;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+}
