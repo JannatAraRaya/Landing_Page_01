@@ -1,120 +1,162 @@
 @use "../../styles/color" as *;
+.header {
+        height: 800px;
+        background: url("/images/wave.png") left top/cover;
+        background-repeat: no-repeat;
+        background-size: 780px 800px;
+
+
+        @media only screen and (max-width: 768px) {
+                background-size: 100% auto;
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                background-size: 100% auto;
+        }
+
+        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+                background-size: 100% auto;
+        }
+
+        @media only screen and (min-width: 1281px) {
+                background-size: 780px 800px;
+        }
+}
+
+Link {
+        text-decoration: none;
+}
+
+header {
+        position: relative;
+        // padding: 0 32px;
+}
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 52px;
-  margin: 0 auto;
-  padding-top: 23px;
-  padding-left: 0px;
-  overflow: hidden;
+        width: 100%;
+        height: 55px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 }
+
 .navbar__logo {
-  color: $text-light;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  text-transform: uppercase;
-  margin-left: 120px;
-  letter-spacing: -1px;
+        color: $text-light;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 5px 190px 0px 55px;
 }
-// .navbar__item{
-//   // margin-left: 120px;
-// }
+
+.navbar__middle {
+        display: flex;
+        gap: 2rem;
+        margin-top: 4px;
+}
+
 .navbar__link {
-  margin: auto;
-  color: $text-light-blue;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-decoration: none;
-  margin-left: 40px;
-}
-.navbar__button {
-  color: $text-light;
-  text-decoration: none;
-}
-.navbar__button--signIn {
-  margin-right: 49px;
-  color: $text-light;
-  text-align: center;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  border: none;
-}
-.navbar__button--startFree {
-  width: 137px;
-  height: 52px;
-  color: #fff;
-  text-align: center;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  flex-shrink: 0;
-  background-color: $color-basic-blue;
-  border-radius: 10px;
-  text-decoration: none;
-  display: inline-block;
-  border: none;
+        color: $text-light;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
 
-  &:hover {
-    background-color: darken($color-basic-blue, 10%);
-  }
+        &:hover {
+                color:$color-basic-blue;
+        }
 }
-@media only screen and (max-width: 1024px){
-  .navbar__logo {
-    font-size: 20px;
-  }
-  .navbar__link {
-    font-size: 14px;
-    margin-left: 14px;
-  }
-  .navbar__button{
-    display: flex;
-  }
-  .navbar__button--signIn {
-    margin-left: 22px;
-    font-size: 14px;
-  }
-  .navbar__button--startFree {
-    width: 80px;
-    height: 40px;
-    font-size: 12px;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-left: 8px;
-  }
+.navbar__right--sign-in{
+        margin-right: 40px;
+        color:$text-light;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        &:hover {
+                color: $color-basic-blue;
+        }   
+}
+.navbar__button,.dropdown-menu__button {
+        width: 137px;
+        height: 52px;
+        color: $color-white;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        flex-shrink: 0;
+        background-color: $color-basic-blue;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor:pointer;
+        transition: scale 0.2 ease;
+
+        &:hover {
+                scale:1.05;
+                background-color: darken($color-basic-blue, 10%);
+        }
+        &:active{
+                scale:0.95;
+        }
+}
+.navbar__toogle-btn{
+        cursor: pointer;
+        display: none;
 }
 
-@media only screen and (max-width: 768px){
-  .navbar__logo {
-    font-size: 18px;
-  }
-  .navbar__link {
-    font-size: 12px;
-    margin-left: 12px;
-  }
-  .navbar__button{
-    display: flex;
-  }
-  .navbar__button--signIn {
-    margin-left: 20px;
-    font-size: 12px;
-  }
-  .navbar__button--startFree {
-    width: 80px;
-    height: 40px;
-    font-size: 12px;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-left: 8px;
-  }
+.dropdown-menu{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top:60px;
+        width:300px;
+        background:rgba(107, 111, 163, 0.1);
+        backdrop-filter:blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        padding-bottom: 10px;
+}
+.dropdown-menu__link{
+        
+        display: flex;
+        flex-direction: column;
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ }
+ .dropdown-menu__button {
+        width:100%;
+        justify-self:center;
+        text-align: center;
+ }
+@media (max-width:992px){
+        .navbar__link,
+        .navbar__button,.navbar__right--sign-in{
+                display: none;
+        }
+
+         .navbar__toogle-btn{
+                display:block;
+         }
+         .dropdown-menu{
+                display:block;
+         }
+}
+@media (max-width: 576px){
+        .dropdown-menu{
+                left: 2rem;
+                width: unset;
+        }
 }

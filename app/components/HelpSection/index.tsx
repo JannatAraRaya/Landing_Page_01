@@ -3,10 +3,6 @@ import { Manrope } from 'next/font/google'
 import Card from '../HelpSectionCard';
 import Image from 'next/image';
 import HelpBackground from "../../../public/images/helpSection/help-bg.png"
-import HandShakeBg from "../../../public/images/helpSection/handshake.jpg"
-import Prize from "../../../public/images/helpSection/prize.svg";
-import Flower from "../../../public/images/helpSection/flower.svg";
-import Sun from "../../../public/images/helpSection/sun.svg";
 
 
 
@@ -34,7 +30,7 @@ const Help = () => {
                     <div className="help-section__text">
                         <h2 className={`help-section__text--bold ${manrope.className}`}>We help your business grow faster.</h2>
                         <p className={`help-section__text--para ${manrope.className}`} >Why kept very ever home mrs. Considered sympathize ten 
-                        {/* <span className={`help-section__text--tilted ${manrope.className}`}>   uncommonly occasional assistance sufficient.</span> */}
+                        
                         
                       </p>
                       <p className={`help-section__text--tilted ${manrope.className}`}>   uncommonly occasional assistance sufficient.</p>

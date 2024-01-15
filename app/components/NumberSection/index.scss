@@ -1,10 +1,12 @@
+@use "../../styles/color" as *;
 .number-section {
-    width: 0 auto;
     height: 650px;
     margin-top: 100px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .number-section__relative {
-    width: 0 auto;
     height: 650px;
     margin-left: 122px;
     position: relative;
@@ -17,7 +19,7 @@
     width: 300px;
     height: 17px;
     top: 32px;
-    color: #5d5fef;
+    color: $color-basic-blue;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -29,7 +31,7 @@
     width: 450px;
     height: 96px;
     top: 65px;
-    color: #000;
+    color:$text-light;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
@@ -41,7 +43,7 @@
     width: 460px;
     height: 96px;
     top: 168px;
-    color: #64607d;
+    color: $text-light-blue;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -53,14 +55,14 @@
     width: 162px;
     height: 47px;
     flex-shrink: 0;
-    color: #fff;
+    color:$color-white;
     text-align: center;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.32px;
-    background-color: #3498db;
+    background-color: $color-sky;
     border: none;
     border-radius: 22px;
     cursor: pointer;
@@ -122,7 +124,7 @@
 h4 {
     width: 163px;
     height: 30px;
-    color: #000;
+    color: $text-light;
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -135,7 +137,7 @@ h4 {
     
     width:280px;
     height:90px;
-    color: #64607d;
+    color: $text-light-blue;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

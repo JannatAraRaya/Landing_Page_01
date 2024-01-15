@@ -1,5 +1,4 @@
 import {Manrope } from 'next/font/google'
-// import IconText from './iconTextProps';
 import './index.scss';
 
 const manrope =Manrope ({  

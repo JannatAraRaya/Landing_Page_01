@@ -3,7 +3,7 @@ import React from 'react';
 import './index.scss'
 
 interface CardProps {
-    icon: string | React.ReactElement;
+    icon: string;
     title: string;
     text: string;
     readMoreText: string;
@@ -18,11 +18,8 @@ const Card: React.FC<CardProps> = ({ icon, title, text, readMoreText }) => {
     return (
         <div className="card">
             <div className="card__icon">
-                {typeof icon === 'string' ? (
                     <img src={icon} alt="Icon" />
-                ) : (
-                    <>{icon}</>
-                )}
+               
             </div>
             <div className={`card__content ${manrope.className}`}>
                 <h2>{title}</h2>

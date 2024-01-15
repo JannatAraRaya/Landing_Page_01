@@ -1,0 +1,52 @@
+@use "../../styles/color" as *;
+.offened-card {
+    width: 580px;
+    height: 355px;
+    border: 1px solid $border-color-grey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:$border-color-grey;
+}
+.offened-card__header {
+    color: $text-light;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: -1.14px;
+    width: 445px;
+    height: 100px;
+    padding: 24px 0px 0px 45px;
+}
+.offened-card__para {
+    color: $text-light-blue;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.32px;
+    padding: 45px 0px 0px 20px;
+    width: 500px;
+    height: 60px;
+}
+p.offened-card__para{
+        text-align-last: center;
+
+}
+.offened-card__btn {
+    width: 185px;
+    height: 60px;
+    background-color:$color-basic-blue;
+    color:$color-white;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border:none;
+    border-radius: 10px;
+    margin:80px 0px 0px 200px;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.download-section{
+    position: relative;
+    background: url("/images/download-bg.jpg");
+    background-repeat: no-repeat;
+    // background-color: brown;
+}
+.download-section__wrapper{
+    width: 100%;
+    height: 740px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    background-color: brown;
+}
