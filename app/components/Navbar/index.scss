@@ -152,11 +152,13 @@ header {
          }
          .dropdown-menu{
                 display:block;
+                z-index: 1;
          }
 }
 @media (max-width: 576px){
         .dropdown-menu{
                 left: 2rem;
                 width: unset;
+                z-index: 1;
         }
 }

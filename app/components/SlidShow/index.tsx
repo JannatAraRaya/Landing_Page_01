@@ -1,41 +1,37 @@
-"use client"
 import React from 'react';
 import Slider from 'react-slick';
+import { useTestimonialContext } from "@/app/pages/TestimonialContext";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './index.scss';
+import { CustomNextArrow, CustomPrevArrow } from '../CustomArrow';
 
-interface SlideshowProps {
-  slides: {
-    image: string;
-    review: string;
-  }[];
-}
+const TestimonialSlider: React.FC = () => {
+  const { testimonials, currentIndex, setCurrentIndex } = useTestimonialContext();
 
-const Slideshow: React.FC<SlideshowProps> = ({ slides }) => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    afterChange: (index: number) => setCurrentIndex(index),
+    prevArrow: <CustomPrevArrow src="/images/testimonial/prev.png" alt="Previous Arrow" />,
+    nextArrow: <CustomNextArrow src="/images/testimonial/next.png" alt="Next Arrow" />,
   };
 
   return (
-    <div className="slideshowContainer">
+    <div className="testimonial-section__image">
       <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <div key={index} className="slide">
-            <div className="imageContainer">
-              <img src={slide.image} alt={`Slide ${index + 1}`} />
-            </div>
-            <div className="reviewContainer">
-              <p>{slide.review}</p>
-            </div>
+        {testimonials.map((testimonial, index) => (
+          <div key={index}>
+            <img src={testimonial.image} alt={`Review ${index + 1}`} />
           </div>
         ))}
       </Slider>
+
     </div>
   );
 };
 
-export default Slideshow;
+export default TestimonialSlider;

@@ -8,8 +8,10 @@ import Help from './components/HelpSection'
 import HeaderSection from './pages/HeaderSection'
 import Hero from './pages/HeaderSection'
 import OffenedSection from './pages/OffenedSection'
-import TestimonialSection from './pages/TestimonialSection'
+import TestimonialSection from './components/TestimonialSection'
 import DownloadSection from './pages/DownloadSection'
+import TrackSection from './pages/TrackSection'
+import BlogSection from './pages/BlogSection'
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
       <OffenedSection/>
       <TestimonialSection/>
       <DownloadSection/>
+      {/* <BlogSection/> */}
+      <TrackSection/>
       <Footer/>
     </main>
   )

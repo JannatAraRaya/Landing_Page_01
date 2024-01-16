@@ -1,0 +1,15 @@
+.testimonial-section__image{
+    width:400px;
+    height: 530px;    
+    z-index: 1;
+    position: absolute;
+    top:60px;
+    left:120px;
+}
+.testimonial-section__slide-background{
+    width:400px;
+    height:450px;
+    background-color: #C4C4C4;
+    position: absolute;
+ z-index: -1;
+}

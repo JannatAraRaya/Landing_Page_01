@@ -1,0 +1,114 @@
+.testimonial-section {
+    margin-top: 125px;
+    margin-bottom: 100px;
+}
+.testimonial-section__wrapper {
+    width: 100%;
+    height: 740px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.testimonial-section__text {
+    text-align: center;
+}
+.testimonial-section__first {
+    color: var(--Pallet-4-Primary, #3734a9);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.testimonial-section__h1 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    width: 621px;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.testimonial-section__middle {
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+.testimonial-section__slider {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.testimonial-section__review {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.testimonial-section__background--cyan {
+    position: absolute;
+    width: 400px;
+    height: 480px;
+    top: 120px;
+    left: 115px;
+    background-color: #c4c4c4;
+}
+.testimonial-section__background--ellipse {
+    position: absolute;
+    right: 22px;
+    bottom: 33px;
+    z-index: -1;
+}
+.testimonial-section__background--upper-ellipse {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: -1;
+}
+.testimonial-section__background--dots {
+    position: absolute;
+    right: 48px;
+    top: 75px;
+    z-index: -1;
+}
+.testimonial-section__background--dot-wave {
+    position: absolute;
+    bottom: 50px;
+    left: 210px;
+}
+.testimonial-section__review-background--comma {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+}
+.testimonial-section__company-logo{
+    position: absolute;
+    top:460px;
+    left:70px
+}
+.testimonial-section__company-logo h1 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.6px;
+}
+.testimonial-section__company-logo p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.32px;
+}
+.testimonial-section__logo{
+    position: absolute;
+    bottom:192px;
+    right:10px;
+
+}
