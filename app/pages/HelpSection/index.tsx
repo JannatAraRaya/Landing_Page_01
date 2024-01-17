@@ -4,7 +4,7 @@ import { Manrope } from 'next/font/google';
 import Card from '../../components/HelpSectionCard';
 import Image from 'next/image';
 import HelpBackground from "../../../public/images/helpSection/help-bg.png";
-import './index.scss'
+// import './index.scss'
 
 const manrope = Manrope({
   weight: ['400', '600', '700'],

@@ -1,8 +1,8 @@
 @use "../../styles/color" as *;
 
 .help-section {
-    width: 0 auto;
-    height:auto;
+    // width: 0 auto;
+    height: 1450px;
     margin-top: 100px;
     overflow: hidden;
 }
@@ -90,11 +90,33 @@
     outline: none;
     z-index: 1;
 }
-.help-section__cards--one {
-    position: absolute;
-    top: 740px;
-    left: 130px;
+.help-section--div{
+    padding-top: 750px;
 }
+.help-section__cards {  
+     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+.help-section__cards--one,
+.help-section__cards--two,
+.help-section__cards--three {
+    flex: 1 0 calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+}
+// .help-section__cards {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between; 
+// }
+// .help-section__cards--one {
+//     position: absolute;
+//     top: 740px;
+//     left: 130px;
+// }
 // .help-section__cards--two {
 //     position: absolute;
 //     top: 740px;
@@ -165,9 +187,102 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .help-section {
-        width: 0 auto;
-        height: 600px;
+    .help-section{
+        margin-top:0px;
+        height: auto;
         overflow: hidden;
+        display: block;
     }
-} 
+    .help-section__background--wave {
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        top: 110px;
+        
+    }
+    .help-section__box-part {
+        overflow: hidden;
+        width: 250px;
+        height: 140px;
+        position: absolute;
+        top: 2px;
+        left:20%;
+        // margin-left:auto;
+        border-radius: 8px;
+     }
+     .help-section__box-part p {
+        position: absolute;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.2px;
+        z-index: 1;
+    }
+    .help-section__box-part--p1 {
+        top: 55px;
+        left: 0px;
+    }
+    .help-section__box-part--header {
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        top: 30px;
+        left: 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .help-section__box-part button {
+        position: absolute;
+        top: 100px;
+        left: 65px;
+        width: 100px;
+        height: 20px;     
+        font-size: 10px;
+        line-height: 12px;
+        border-radius: 16px;
+    }
+    .help-section--div{
+        padding-top: 280px;
+    }
+    .help-section__cards {
+        display:flex;
+        justify-content: center; 
+      }
+    
+      .help-section__cards--one,
+      .help-section__cards--two,
+      .help-section__cards--three {
+        width: 100%; 
+        margin-bottom: 20px; 
+      }
+      .help-section__text--bold {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -1.26px;
+        top: 160px;
+        left: 50px;
+    }
+    .help-section__text--para {
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        top: 190px;
+        left: 70px;
+    }
+    .help-section__text--tilted {
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        top: 200px;
+        left: 90px;
+    }
+    .help-section__text--button {
+        position: absolute;
+        top: 230px;
+        left: 120px;
+        width: 150px;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+}

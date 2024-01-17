@@ -1,0 +1,29 @@
+{
+    "logoText": "AR Shakir",
+    "slogan": "Simple innate summer fat appear basket his desire joy.",
+    "socialMedia": {
+      "linkedIn": "/path/to/linkedin",
+      "messenger": "/path/to/messenger",
+      "twitter": "/path/to/twitter",
+      "twoo": "/path/to/twoo"
+    },
+    "companyLinks": [
+      { "text": "About us", "url": "/" },
+      { "text": "Careers", "url": "/" },
+      { "text": "Blog", "url": "/" },
+      { "text": "Pricing", "url": "/" }
+    ],
+    "resourcesLinks": [
+      { "text": "Templates", "url": "/" },
+      { "text": "Tutorials", "url": "/" },
+      { "text": "Free resources", "url": "/" },
+      { "text": "Contract templates", "url": "/" }
+    ],
+    "newsletter": {
+      "placeholder": "Your email address",
+      "buttonText": "Subscription",
+      "note": "* Will send you weekly updates for your better finance management."
+    },
+    "copyright": "Copyright @ AR Shakir 2022. All Rights Reserved."
+  }
+  

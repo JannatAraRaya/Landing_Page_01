@@ -1,6 +1,7 @@
 .main-div{
     margin:0 auto;
     height:237px;
+    display: block;
 }
 .logos{
     text-align: center;
@@ -15,15 +16,16 @@
 
 @media only screen and (max-width: 1024px) {
     .logos{
-        margin:0px 40px 0px 40px;
+        margin:0 auto;
     }
     .logos--logoItem {
         margin-left: 28px;
-        width:80px;
-        height: 80px;
     }
 }
 @media only screen and (max-width: 768px) {
+    .logos{
+        margin:0 auto;
+    }
     .logos--logoItem {
         margin-left: 15px;
         width:50px;

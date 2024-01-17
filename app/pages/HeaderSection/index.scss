@@ -8,20 +8,21 @@
 
 
         @media only screen and (max-width: 768px) {
-                background-size: 100% auto;
+                height: 400px;
         }
 
-        @media only screen and (min-width: 769px) and (max-width: 1024px) {
-                background-size: 100% auto;
-        }
+        // @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                
+        //         height: 400px;
+        // }
 
-        @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-                background-size: 100% auto;
-        }
+        // @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+        //         background-size: 100% auto;
+        // }
 
-        @media only screen and (min-width: 1281px) {
-                background-size: 780px 800px;
-        }
+        // @media only screen and (min-width: 1281px) {
+        //         background-size: 780px 800px;
+        // }
 }
 
 

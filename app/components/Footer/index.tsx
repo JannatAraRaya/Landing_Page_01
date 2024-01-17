@@ -59,7 +59,7 @@ const FooterSection = () => {
                             </div>
                         </div>
                         <div className="footer__sub-section__links__div">
-                            <h4>Join Our Newsletter</h4>
+                            <h4 className="footer__sub-section__links__div--join">Join Our Newsletter</h4>
                             <div className="footer__sub-section__links__div--input-button">
                                 <input type="text" placeholder='Your email address' className='footer__sub-section__links__div--input' />
                                 <button className='footer__sub-section__links__div--button'>Subscription</button>
